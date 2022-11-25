@@ -1,0 +1,99 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyMErSvxj1bTABpg6C21Y8fT",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/parkjunwu2003/22_05_basic_python/blob/main/BP_05_Ch10\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "1. 다음과 같이 하나의 레이블과 2개의 버튼을 가지는 프로그램을 작성해보자."
+      ],
+      "metadata": {
+        "id": "G12lKYVhhVAt"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "from tkinter import Tk, Label, Butten\n",
+        "\n",
+        "def greet():\n",
+        "  print(\"파이썬에 오신 것을 환영합니다. \")\n",
+        "\n",
+        "window = TK()\n",
+        "label = label(window, text=\"간단한 GUI 프로그램!\")\n",
+        "label.pack()\n",
+        "\n",
+        "greet_button =button(window, text=\"환영합니다.\", command=greet )\n",
+        "greet_button.pack()\n",
+        "\n",
+        "window.mainloop()"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 248
+        },
+        "id": "iTC8xk2Yhitj",
+        "outputId": "26ace659-e6b2-4f05-9b5c-436bc9f955be"
+      },
+      "execution_count": 3,
+      "outputs": [
+        {
+          "output_type": "error",
+          "ename": "NameError",
+          "evalue": "ignored",
+          "traceback": [
+            "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+            "\u001b[0;31mNameError\u001b[0m                                 Traceback (most recent call last)",
+            "\u001b[0;32m<ipython-input-3-257821f081cd>\u001b[0m in \u001b[0;36m<module>\u001b[0;34m\u001b[0m\n\u001b[1;32m      2\u001b[0m   \u001b[0mprint\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m\"파이썬에 오신 것을 환영합니다. \"\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      3\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m----> 4\u001b[0;31m \u001b[0mwindow\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0mTK\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m      5\u001b[0m \u001b[0mlabel\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0mlabel\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mwindow\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mtext\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0;34m\"간단한 GUI 프로그램!\"\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      6\u001b[0m \u001b[0mlabel\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mpack\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;31mNameError\u001b[0m: name 'TK' is not defined"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "2. 숫자를 입력하고 \"더하기\" 버튼을 누르면 합계가 더해지고 \"빼기\" 버튼을 누르면 합계에서 빼지는 계산기를 작성하여 본다"
+      ],
+      "metadata": {
+        "id": "b0jFEZU_l8Vy"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "from tkinter import Tk, Label, Butten, Entry, IntVar, END, W, E"
+      ],
+      "metadata": {
+        "id": "GJXJbpzBmunx"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
